@@ -19,6 +19,7 @@ public class Main{
         System.out.println("Correcting the quote by Donald Knuth!");
         list.swapNodes("all", "Premature");
         System.out.println(list);
+
     }
 }
 
