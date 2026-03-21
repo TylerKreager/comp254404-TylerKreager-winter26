@@ -26,7 +26,7 @@ public class FileSystem {
         File folder = new File("./TylerKreager_lab3/src/Exercise3/newFolder");
         if(folder.mkdir()) {
             System.out.println("Folder created");
-            for(int i=0; i<500; i++){
+            for(int i=0; i<100; i++){
                 UUID uuid = UUID.randomUUID();
                 File file = new File( folder + "/" + uuid + ".txt");
                 file.createNewFile();
