@@ -10,23 +10,14 @@ public class Main {
         Position<String> networkingPosition = lbt.addRight(root, "Networking");
         Position<String> set = lbt.addLeft(softwarePosition, "SET");
         Position<String> ig = lbt.addRight(softwarePosition, "IG");
-        //          ICET
-        //          /  \
-        //         /    \
-        //   Software   Network
-        //     /  \
-        //    /    \
-        //  SET    IG
-        //
-        printPreorder(lbt);
-        parenthesize(lbt, root);
 
-        Position<String> next = lbt.preorderNext(networkingPosition);
+        //printPreorder(lbt);
+        //parenthesize(lbt, root);
+
+        Position<String> next = lbt.preorderNext(set);
+
         System.out.println(next.getElement());
 
-        Position<String> inOrder = lbt.inorderNext(ig);
-
-        System.out.println(inOrder.getElement());
 
     }
 

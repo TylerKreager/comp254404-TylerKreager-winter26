@@ -78,19 +78,6 @@ public abstract class AbstractBinaryTree<E> extends AbstractTree<E>
         }
         return null;
     }
-
-    public Position<E> inorderNext(Position<E> p) {
-        if (parent(p) != null && p == left(parent(p))){
-            return parent(p);
-        }
-        if (parent(p) != null && p != left(parent(p))){
-            return right(parent(p));
-        }
-        if (parent(p) == null && right(p) != null) {
-            return right(p);
-        }
-        return null;
-    }
     // *********  Above is for Ex1  *********
 
 
